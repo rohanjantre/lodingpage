@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading Project</title>
+    <style>
+        .circle{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+           }
+        .ro{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: 25px;
+            animation-duration: 0.5s;
+            animation-name: rohan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+        .circle1{
+            background-color: red;
+            animation-delay: 0.0s;
+            
+                }
+        .circle2{
+            background-color: blue;
+            animation-delay: 0.1s;   
+        }
+        .circle3{
+            background-color: yellow;
+            animation-delay: 0.2s;        
+        }
+        .circle4{
+            background-color:green; 
+            animation-delay: 0.3s;   
+        }
+        .circle5{
+            background-color: rgb(0, 255, 225);  
+            animation-delay: 0.4s;
+        }
+        @keyframes rohan{
+           0%,100%{
+            transform: translateY(0px);
+           }
+           33%{
+            transform: translateY(60px);
+           }
+           66%{
+            transform: translateY(30px);
+           }
+           80%{
+            transform: translateY(10px);
+           }
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle">
+
+        <div class="ro circle1"></div>
+        <div class="ro circle2"></div>
+        <div class="ro circle3"></div>
+        <div class="ro circle4"></div>
+        <div class="ro circle5"></div>
+    </div>
+</body>
+</html>
